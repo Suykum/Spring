@@ -6,5 +6,7 @@
 </head>
 <body>
 Customer: ${customer.firstName} ${customer.lastName}
+<br><br>
+Free passes: ${customer.freePasses}
 </body>
 </html>
