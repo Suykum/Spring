@@ -1,0 +1,3 @@
+Created bean for SessionFactory in spring config file.
+Then SessionFactory injected to CustomerDAO implementation class.
+Then Customer implementation class injected to CustomerController

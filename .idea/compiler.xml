@@ -9,6 +9,7 @@
         <module name="spring-annotation-demo" />
         <module name="spring-demo-one" />
         <module name="spring-mvc-demo" />
+        <module name="web-customer-tracker" />
       </profile>
     </annotationProcessing>
   </component>
