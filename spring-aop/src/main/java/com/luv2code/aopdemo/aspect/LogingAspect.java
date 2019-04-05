@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Order(1)
 public class LogingAspect {
     @Before("com.luv2code.aopdemo.aspect.AopExpressions.forDaoPackageNoGetterSetter()")
-    public void beforeAddAccountAdvice(JoinPoint joinPoint) {
+    public void beforeMethodAdvice(JoinPoint joinPoint) {
         System.out.println("\n=====> Executing @Before advice on method");
 
         //display the method signature
