@@ -4,7 +4,7 @@ import com.luv2code.aopdemo.dao.AccountDAO;
 import com.luv2code.aopdemo.dao.MembershipDAO;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class MainAopApp {
+public class BeforeAopApp {
     public static void main(String[] args) {
 
         // read spring config java class
