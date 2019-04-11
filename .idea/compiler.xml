@@ -10,6 +10,8 @@
         <module name="spring-aop" />
         <module name="spring-demo-one" />
         <module name="spring-mvc-demo" />
+        <module name="spring-security" />
+        <module name="spring-security-jdbc" />
         <module name="web-customer-tracker" />
       </profile>
     </annotationProcessing>
