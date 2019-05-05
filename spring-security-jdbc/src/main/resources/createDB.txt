@@ -1,0 +1,32 @@
+
+// DB with plaintext password (spring_auth)
+create table users (username varchar(50) not null primary key, password varchar(50) not null,
+				   enabled smallint not null);
+insert into users values ('john', '{noop}test123', 1),
+                         ('mary', '{noop}test123',1),
+                         ('susan','{noop}test123',1);
+
+create table authorities(username varchar(50) references users not null, authority varchar(50) not null, UNIQUE (username, authority));
+insert into authorities values('john', 'ROLE_EMPLOYEE'),
+                                ('mary', 'ROLE_EMPLOYEE'),
+                                ('mary', 'ROLE_MANAGER'),
+                                ('susan', 'ROLE_EMPLOYEE'),
+                                ('susan', 'ROLE_ADMIN')
+
+
+
+// DB (spring_auth_enc) with encrypted password
+
+create table users (username varchar(50) not null primary key, password varchar(68) not null,
+				   enabled smallint not null);
+insert into users values('john', '{bcrypt}$2a$10$hUZlSr3aZuCFQ3oi.AEVCu0zJ.yn67AQ6N4Bn7.0h/gur77H02goK', 1), //fun123
+                        ('mary', '{bcrypt}$2a$10$hUZlSr3aZuCFQ3oi.AEVCu0zJ.yn67AQ6N4Bn7.0h/gur77H02goK', 1),
+                        ('susan', '{bcrypt}$2a$10$hUZlSr3aZuCFQ3oi.AEVCu0zJ.yn67AQ6N4Bn7.0h/gur77H02goK', 1);
+
+create table authorities(username varchar(50) references users not null, authority varchar(50) not null, UNIQUE (username, authority));
+
+insert into authorities values('john', 'ROLE_EMPLOYEE'),
+                                ('mary', 'ROLE_EMPLOYEE'),
+                                ('mary', 'ROLE_MANAGER'),
+                                ('susan', 'ROLE_EMPLOYEE'),
+                                ('susan', 'ROLE_ADMIN')
