@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/spring-mvc-demo" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-rest" />
     <file type="web" url="file://$PROJECT_DIR$/spring-security" />
     <file type="web" url="file://$PROJECT_DIR$/spring-security-jdbc" />
     <file type="web" url="file://$PROJECT_DIR$/web-customer-tracker" />

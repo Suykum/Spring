@@ -16,6 +16,8 @@
         <module>spring-aop</module>
         <module>spring-security</module>
         <module>spring-security-jdbc</module>
+        <module>jackson-databinding-json</module>
+        <module>spring-rest</module>
     </modules>
 
     <dependencies>
@@ -136,6 +138,12 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>javax.servlet.jsp-api</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
         <dependency>
             <groupId>org.aspectj</groupId>
@@ -178,7 +186,12 @@
             <version>2.6.0</version>
         </dependency>
 
-
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.8</version>
+        </dependency>
 
 
     </dependencies>
