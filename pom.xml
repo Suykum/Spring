@@ -18,6 +18,7 @@
         <module>spring-security-jdbc</module>
         <module>jackson-databinding-json</module>
         <module>spring-rest</module>
+        <module>spring-crm-rest</module>
     </modules>
 
     <dependencies>

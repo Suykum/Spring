@@ -9,6 +9,7 @@
         <module name="jackson-databinding-json" />
         <module name="spring-annotation-demo" />
         <module name="spring-aop" />
+        <module name="spring-crm-rest" />
         <module name="spring-demo-one" />
         <module name="spring-mvc-demo" />
         <module name="spring-rest" />
