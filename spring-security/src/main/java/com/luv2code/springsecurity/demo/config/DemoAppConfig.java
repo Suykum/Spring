@@ -18,6 +18,8 @@ public class DemoAppConfig {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
         viewResolver.setPrefix("/WEB-INF/view/");
         viewResolver.setSuffix(".jsp");
+        System.out.println();
         return viewResolver;
     }
 }
+// git
